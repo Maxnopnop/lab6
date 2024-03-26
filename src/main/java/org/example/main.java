@@ -6,8 +6,10 @@ package org.example;
 public class main {
 	public static void main(String[] args) {
 		Animal animals[] = new Animal[10];
-		for (Animal a : animals)
-			a = new Animal();	
+		/*for (Animal a : animals)
+			a = new Animal();*/
+		for (int i = 0; i < 10; i++)
+			animals[i] = new Animal();
 		for (int iii = 0; iii < 10; iii++) {
 			int ii = 0;
 			for (; ii < 100 && animals[iii].isAlive() ; ii++) {
